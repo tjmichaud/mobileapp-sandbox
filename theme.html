@@ -6,10 +6,17 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
+	<link href='http://fonts.googleapis.com/css?family=Alef:400,700' rel='stylesheet' type='text/css'>
 	<!-- CDN jquery and jquery mobile -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+	
+	<link rel="stylesheet" href="themes/gymnics.min.css" />
+	
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+	
 	
 	
 	<!-- local scripts jquery and jquery mobile
@@ -46,33 +53,91 @@
 	});
 	</script>
 	
+
+		
 </head>
 <body>
 
 
-<div data-role="header" data-theme="a">
-	<h1>TITLE</h1>
+
+<div data-role="header" data-theme="a" data-position="fixed">
+	<h1>Home</h1>
 </div>
 
-	<div data-role="page" data-title="Home">
+
+
+
+	<div data-role="page" data-title="Featured" id="home" data-theme="a">
 		
 		<div role="main" class="ui-content">
-			<h1>Page Title</h1>
+			<h1>Featured Events</h1>
 			<p>page content goes here.</p>
 			
 			
 		</div><!-- end content -->
 
 	</div><!-- end first page -->
-	
+
+
+
+
+
+
+	<div data-role="page" data-title="Calendar" id="calendar" data-theme="a">
+		
+		<div role="main" class="ui-content">
+			<h1>Calendar</h1>
+			<p>page content goes here.</p>
+			
+			
+		</div><!-- end content -->
+
+	</div><!-- end second page -->
+
+
+
+
+
+
+	<div data-role="page" data-title="Categories" id="categories" data-theme="a">
+		
+		<div role="main" class="ui-content">
+			<h1>Categories</h1>
+			<p>page content goes here.</p>
+			
+			
+		</div><!-- end content -->
+
+	</div><!-- end third page -->
+
+
+
+
+	<div data-role="page" data-title="Search" id="search" data-theme="a">
+		
+		<div role="main" class="ui-content">
+			<h1>Search</h1>
+			<p>page content goes here.</p>
+			
+			
+		</div><!-- end content -->
+
+	</div><!-- end fourth page -->
+
+
+
 
 	<div data-role="footer" data-position="fixed" data-theme="a">
-		<div data-role="navbar" >
+		<div data-role="navbar">
 			<ul>
-				<li><a href="index.html" data-prefetch="true">Home</a></li>
-				<li><a href="about.html" data-prefetch="true" data-transition="flow">About</a></li>
-				<li><a href="news.html" data-prefetch="true" data-transition="flow">News</a></li>
+				<li><a href="#home" data-icon="bullets">Featured</a></li>
+				<li><a href="#calendar" data-transition="flow" data-icon="calendar">Calendar</a></li>
+				<li><a href="#categories" data-transition="flow" data-icon="grid">Categories</a></li>
+				<li><a href="#search" data-transition="flow" data-icon="search">Search</a></li>
 			</ul>
+
+
+
 		</div>	
 	</div><!-- end footer -->	
 
